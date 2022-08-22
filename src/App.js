@@ -13,10 +13,9 @@ import MainStage from "./components/webgl/MainStage";
 
 // Loading components
 import PageLoader from "./components/PageLoader";
-import ForkMeOnGitHub from "./components/ForlMeOnGitHub";
 import Name from "./components/Name";
-import Footer from "./components/Footer";
 import Buttons from "./components/Buttons";
+import Footer from "./components/Footer"
 import Popup from "./components/Popup";
 import Category from "./components/Category";
 import PartLoader from "./components/PartLoader";
@@ -83,7 +82,6 @@ class App extends Component {
             <div className="App">
                 <CustomView condition={isBrowser || isTablet}>
                     <PageLoader/>
-                    <ForkMeOnGitHub/>
                     <Name
                         avatarName={this.state.avatarName}
                         updateAvatarName={this.updateAvatarName}
@@ -118,9 +116,8 @@ class App extends Component {
                 </CustomView>
                 <CustomView condition={isMobileOnly}>
                     <div className="App">
-                        <ForkMeOnGitHub/>
                         <header className="App-header">
-                            <img src={logo} className="App-logo" alt="Justin Lee Logo"/>
+                            <img src={logo} className="App-logo" alt="SelfLabsLogo"/>
                             <div className="full-screen-message">
                                 <code>
                                     <Typed
@@ -134,14 +131,7 @@ class App extends Component {
                                     />
                                 </code>
                             </div>
-                            <a
-                                className="App-link"
-                                href="https://github.com/realJustinLee/LiAg"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                            >
-                                Fork me on GitHub
-                            </a>
+                           
                         </header>
                     </div>
                 </CustomView>

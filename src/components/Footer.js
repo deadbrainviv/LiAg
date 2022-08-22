@@ -28,28 +28,17 @@ class Footer extends Component {
                 <div className="love-author abs bottom">
                     <button onClick={() => {
                         const content = <span>
-                            Author: <a href="https://www.linkedin.com/in/li-xin-justin/"
-                                       target="_blank" rel="noopener noreferrer">Justin Lee</a>
-                            <br/>
-                            E-Mail: <a href="mailto:JustinDellAdam@live.com"
-                                       target="_blank" rel="noopener noreferrer">JustinDellAdam@live.com</a>
-                            <br/>
-                            GitHub: <a href="https://github.com/realJustinLee"
-                                       target="_blank" rel="noopener noreferrer">https://github.com/realJustinLee</a>
                         </span>;
                         this.setState({popup: true, message: content});
-                    }}><span role="img" aria-label="Love">Made with️ ❤ by Justin Lee</span>
+                    }}><span role="img" aria-label="Love">Made with️ ❤ by SelfLabs</span>
                     </button>
                     &nbsp;|&nbsp;
                     <button onClick={() => {
                         const content = <span>
-                            This project is covered under:<br/>
-                            <a href="https://github.com/realJustinLee/LiAg/blob/master/LICENSE"
-                               target="_blank" rel="noopener noreferrer">MIT License</a>
                         </span>;
                         this.setState({popup: true, message: content});
                     }}>
-                        <span>LICENSE</span>
+                        <span>| All Rights Reserved </span>
                     </button>
                 </div>
             </div>
